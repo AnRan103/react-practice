@@ -1,0 +1,39 @@
+@import '@/style/index.scss';
+
+.user{
+  // text-align: center;
+  // display: flex;
+  // flex-direction: column;
+  height: 100%;
+  .header{
+    color: $ui-white;
+    // flex-basis: 65px;
+  }
+  .content{
+    width: 360px;
+    margin: 70px auto 100px;
+    // flex-grow: 1;
+    .login-logo{
+      width: 80px;
+      height: 80px;
+      border-radius: 100%;
+      margin: 20px auto;
+      line-height: 70px;
+      background-color: $ui-blue;
+      .login-logo-icon{
+        font-size: 60px;
+        color: $ui-white;
+        vertical-align: middle;
+      }
+    }
+    .login-form-forgot {
+      float: right;
+    }
+    .login-form-button {
+      width: 100%;
+    }
+  }
+  .footer{
+    // flex-basis: 70px;
+  }
+}
