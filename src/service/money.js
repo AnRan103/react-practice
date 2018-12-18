@@ -2,10 +2,13 @@ import axios from './config';
 
 const money = {
   add(params) {
-    return axios.post('/money/add', params);
+    return axios.post('/money/add/muti', params);
   },
-  getList() {
+  get() {
     return axios.get('/money/list');
+  },
+  getAverage() {
+    return axios.get('/money/average');
   },
 };
 

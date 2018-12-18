@@ -24,4 +24,12 @@ instance.interceptors.request.use(
   e => Promise.reject(e)
 );
 
+//响应拦截
+instance.interceptors.response.use(
+  (res) => {
+    return Promise.resolve(res && res.data);
+  },
+  e => Promise.reject(e)
+);
+
 export default instance;
